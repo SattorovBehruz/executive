@@ -29,7 +29,6 @@ img {
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
-  padding-block: 9px 13px;
 }
 
 .logo-img {
@@ -51,14 +50,17 @@ img {
   margin-right: 68px;
 }
 
-.nav-item:hover::after {
+.nav-item::after {
   display: block;
   width: 23px;
   height: 3px;
+  margin-top: 17px;
+  content: "";
+}
+
+.nav-item:hover::after {
   background-image: url("../images/befot.svg");
   background-repeat: no-repeat;
-  content: "";
-  
 }
 
 .item {
@@ -178,8 +180,23 @@ img {
   list-style-type: none;
 }
 
-.dot-img {
-  margin-inline: auto;
+.dot-list-box {
+  display: flex;
+}
+
+.dot-list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.dot-list::after {
+  display: inline-block;
+  width: 107px;
+  height: 14px;
+  background-image: url("../images/dot.svg");
+  background-repeat: no-repeat;
+  content: "";
 }
 
 .section-services {
@@ -668,6 +685,14 @@ img {
   width: 62px;
   height: 62px;
   content: "";
+}
+
+.testimonial-item-landccape::before {
+  background-image: url("../images/ainara.png");
+}
+
+.testimonial-item-box-senior::before {
+  background-image: url("../images/niel.png");
 }
 
 .testimonial-header {
